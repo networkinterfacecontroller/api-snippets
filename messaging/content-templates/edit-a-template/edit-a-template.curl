@@ -1,9 +1,8 @@
-curl -X POST 'https://content.twilio.com/v1/Content/HXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' \
+curl -X PUT 'https://content.twilio.com/v1/Content/HXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' \
 -H 'Content-Type: application/json' \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN \
 -d '{
     "friendly_name": "card_elite_status",
-    "language": "en",
     "variables": {
         "1": "coupon_code"
     },
