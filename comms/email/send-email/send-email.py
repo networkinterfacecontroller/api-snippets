@@ -1,32 +1,31 @@
-from twilio_comms import TwilioComms, EmailAddressSender, EmailHtmlContent, EmailAttachmentsItem
-from twilio_comms.emails import EmailsSendRequestToItemAddress
+from twilio_comms import TwilioComms
 
 client = TwilioComms(
-    account_id="<username>",
-    auth_token="<password>",
+    account_id="TWILIO_ACCOUNT_SID",
+    auth_token="TWILIO_AUTH_TOKEN",
 )
 
 client.emails.send(
-    from_=EmailAddressSender(
-        address="support@example.company.io",
-        name="Cool Co Support",
-    ),
+    from_={
+        "address": "support@example.company.io",
+        "name": "Cool Co Support"
+    },
     to=[
-        EmailsSendRequestToItemAddress(
-            address="bob@example.com",
-            name="Bob Smith",
-        )
+        {
+            "address": "bob@example.com",
+            "name": "Bob Smith"
+        }
     ],
-    content=EmailHtmlContent(
-        html="<html><body>Hey, <br/><br/>Cake</b></body></html>",
-        text="Hey, the cake is ready.",
-        subject="Re: Wedding Cake",
-        attachments=[
-            EmailAttachmentsItem(
-                filename="filename",
-                content_type="contentType",
-                content="content",
-            )
-        ],
-    ),
+    content={
+        "html": "<html><body>Hey, <br/><br/>Cake</b></body></html>",
+        "text": "Hey, the cake is ready.",
+        "subject": "Re: Wedding Cake",
+        "attachments": [
+            {
+                "filename": "filename",
+                "content_type": "contentType",
+                "content": "content"
+            }
+        ]
+    },
 )

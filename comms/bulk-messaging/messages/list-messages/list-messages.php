@@ -9,8 +9,8 @@ use Twilio\Comms\Types\MessageSenderChannel;
 use Twilio\Comms\Types\MessageStatus;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->messages->list(
     new MessagesListRequest([

@@ -11,8 +11,8 @@ import (
 func do() {
     client := client.NewWithOptions(
         option.WithBasicAuth(
-            "<username>",
-            "<password>",
+            "TWILIO_ACCOUNT_SID",
+            "TWILIO_AUTH_TOKEN",
         ),
     )
     request := &twiliocomms.SenderPoolsCreateRequest{

@@ -11,8 +11,8 @@ use Twilio\Comms\Types\PushNotificationContentBody;
 use Twilio\Comms\Types\PushNotificationPriority;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->pushNotifications->send(
     new PushNotificationsSendRequest([

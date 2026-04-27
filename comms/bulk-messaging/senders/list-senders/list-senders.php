@@ -9,8 +9,8 @@ use Twilio\Comms\Types\SenderStatus;
 use DateTime;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->senders->list(
     new SendersListRequest([

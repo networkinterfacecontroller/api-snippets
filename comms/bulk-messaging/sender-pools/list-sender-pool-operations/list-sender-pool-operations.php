@@ -8,8 +8,8 @@ use DateTime;
 use Twilio\Comms\Types\OperationStatus;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->senderPools->listOperations(
     new SenderPoolsListOperationsRequest([

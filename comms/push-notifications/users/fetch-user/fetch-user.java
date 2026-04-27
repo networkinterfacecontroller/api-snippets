@@ -6,7 +6,7 @@ public class Example {
     public static void main(String[] args) {
         TwilioComms client = TwilioComms
             .builder()
-            .credentials("<username>", "<password>")
+            .credentials("TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN")
             .build();
 
         client.pushNotifications().users().fetch("comms_pushnotificationuser_01h9krwprkeee8fzqspvwy6nq8");

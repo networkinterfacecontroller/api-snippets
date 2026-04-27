@@ -10,8 +10,8 @@ import (
 func do() {
     client := client.NewWithOptions(
         option.WithBasicAuth(
-            "<username>",
-            "<password>",
+            "TWILIO_ACCOUNT_SID",
+            "TWILIO_AUTH_TOKEN",
         ),
     )
     client.PushNotifications.DeviceRegistrations.Fetch(

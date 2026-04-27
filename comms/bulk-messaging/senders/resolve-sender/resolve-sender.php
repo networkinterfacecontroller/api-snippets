@@ -8,8 +8,8 @@ use Twilio\Comms\Types\CommunicationRecipient;
 use Twilio\Comms\Types\CommunicationChannel;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->senders->resolve(
     new SendersResolveRequestSenderPoolId([

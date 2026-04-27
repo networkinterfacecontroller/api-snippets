@@ -6,7 +6,7 @@ public class Example {
     public static void main(String[] args) {
         TwilioComms client = TwilioComms
             .builder()
-            .credentials("<username>", "<password>")
+            .credentials("TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN")
             .build();
 
         client.senderPools().removeSender("comms_senderpool_01h9krwprkeee8fzqspvwy6nq8", "comms_sender_01h9krwprkeee8fzqspvwy6nq8");

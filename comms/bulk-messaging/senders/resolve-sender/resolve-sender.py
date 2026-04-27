@@ -1,26 +1,25 @@
-from twilio_comms import TwilioComms, CommunicationRecipient
-from twilio_comms.senders import SendersResolveRequestSenderPoolId
+from twilio_comms import TwilioComms
 
 client = TwilioComms(
-    account_id="<username>",
-    auth_token="<password>",
+    account_id="TWILIO_ACCOUNT_SID",
+    auth_token="TWILIO_AUTH_TOKEN",
 )
 
 client.senders.resolve(
-    request=SendersResolveRequestSenderPoolId(
-        recipient_addresses=[
-            CommunicationRecipient(
-                address="+14153902337",
-                channel="PHONE",
-            ),
-            CommunicationRecipient(
-                address="+14153902337",
-                channel="WHATSAPP",
-            ),
-            CommunicationRecipient(
-                address="davidpletnjov@example.com",
-                channel="EMAIL",
-            )
-        ],
-    ),
+    request={
+        "recipient_addresses": [
+            {
+                "address": "+14153902337",
+                "channel": "PHONE"
+            },
+            {
+                "address": "+14153902337",
+                "channel": "WHATSAPP"
+            },
+            {
+                "address": "davidpletnjov@example.com",
+                "channel": "EMAIL"
+            }
+        ]
+    },
 )

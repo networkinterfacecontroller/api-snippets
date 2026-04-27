@@ -10,8 +10,8 @@ use Twilio\Comms\Types\EmailHtmlContent;
 use Twilio\Comms\Types\EmailAttachmentsItem;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->emails->send(
     new EmailsSendRequest([

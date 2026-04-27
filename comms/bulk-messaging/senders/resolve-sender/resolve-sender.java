@@ -11,7 +11,7 @@ public class Example {
     public static void main(String[] args) {
         TwilioComms client = TwilioComms
             .builder()
-            .credentials("<username>", "<password>")
+            .credentials("TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN")
             .build();
 
         client.senders().resolve(

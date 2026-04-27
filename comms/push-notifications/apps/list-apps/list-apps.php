@@ -7,8 +7,8 @@ use Twilio\Comms\PushNotifications\Apps\Requests\AppsListRequest;
 use DateTime;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->pushNotifications->apps->list(
     new AppsListRequest([

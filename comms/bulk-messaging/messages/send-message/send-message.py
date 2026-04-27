@@ -1,19 +1,18 @@
-from twilio_comms import TwilioComms, MessageContentTextWithMedia
-from twilio_comms.messages import MessagesSendRequestToItemAddress
+from twilio_comms import TwilioComms
 
 client = TwilioComms(
-    account_id="<username>",
-    auth_token="<password>",
+    account_id="TWILIO_ACCOUNT_SID",
+    auth_token="TWILIO_AUTH_TOKEN",
 )
 
 client.messages.send(
     to=[
-        MessagesSendRequestToItemAddress(
-            address="+14153902337",
-            channel="PHONE",
-        )
+        {
+            "address": "+14153902337",
+            "channel": "PHONE"
+        }
     ],
-    content=MessageContentTextWithMedia(
-        text="Hello, World!",
-    ),
+    content={
+        "text": "Hello, World!"
+    },
 )

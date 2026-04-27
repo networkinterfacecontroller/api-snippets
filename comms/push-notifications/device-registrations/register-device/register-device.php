@@ -7,8 +7,8 @@ use Twilio\Comms\PushNotifications\DeviceRegistrations\Requests\DeviceRegistrati
 use Twilio\Comms\Types\PushNotificationProvider;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->pushNotifications->deviceRegistrations->register(
     new DeviceRegistrationsRegisterRequest([

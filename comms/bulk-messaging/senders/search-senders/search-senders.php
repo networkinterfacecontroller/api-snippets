@@ -7,8 +7,8 @@ use Twilio\Comms\Senders\Requests\SendersSearchRequest;
 use Twilio\Comms\Types\SenderCommunicationChannel;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->senders->search(
     new SendersSearchRequest([

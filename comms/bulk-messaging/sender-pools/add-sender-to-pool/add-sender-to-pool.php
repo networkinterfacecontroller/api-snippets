@@ -6,8 +6,8 @@ use Twilio\Comms\TwilioComms;
 use Twilio\Comms\SenderPools\Types\SenderPoolsAddSenderRequestItem;
 
 $client = new TwilioComms(
-    accountId: '<username>',
-    authToken: '<password>',
+    accountId: 'TWILIO_ACCOUNT_SID',
+    authToken: 'TWILIO_AUTH_TOKEN',
 );
 $client->senderPools->addSender(
     'comms_senderpool_01h9krwprkeee8fzqspvwy6nq8',
