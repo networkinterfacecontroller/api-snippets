@@ -33,7 +33,7 @@ public class Example {
                 .content(
                     EmailHtmlContent
                         .builder()
-                        .html("<html><body>Hey, <br/><br/>Cake</b></body></html>")
+                        .html("<html><body>Hey, <br/><br/><b>Cake</b></body></html>")
                         .subject("Re: Wedding Cake")
                         .text("Hey, the cake is ready.")
                         .attachments(

@@ -25,7 +25,7 @@ public partial class Examples
                 }
                 ,
                 Content = new EmailHtmlContent {
-                    Html = "<html><body>Hey, <br/><br/>Cake</b></body></html>",
+                    Html = "<html><body>Hey, <br/><br/><b>Cake</b></body></html>",
                     Text = "Hey, the cake is ready.",
                     Subject = "Re: Wedding Cake",
                     Attachments = new List<EmailAttachmentsItem>(){

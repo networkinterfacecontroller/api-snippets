@@ -33,7 +33,7 @@ func do() {
             },
         },
         Content: &twiliocomms.EmailHtmlContent{
-            Html: "<html><body>Hey, <br/><br/>Cake</b></body></html>",
+            Html: "<html><body>Hey, <br/><br/><b>Cake</b></body></html>",
             Text: twiliocomms.String(
                 "Hey, the cake is ready.",
             ),

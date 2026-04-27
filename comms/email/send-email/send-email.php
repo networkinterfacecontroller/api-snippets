@@ -26,7 +26,7 @@ $client->emails->send(
             ]),
         ],
         'content' => new EmailHtmlContent([
-            'html' => '<html><body>Hey, <br/><br/>Cake</b></body></html>',
+            'html' => '<html><body>Hey, <br/><br/><b>Cake</b></body></html>',
             'text' => 'Hey, the cake is ready.',
             'subject' => 'Re: Wedding Cake',
             'attachments' => [
