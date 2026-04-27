@@ -19,7 +19,7 @@ func do() {
         To: []*twiliocomms.MessagesSendRequestToItem{
             &twiliocomms.MessagesSendRequestToItem{
                 MessagesSendRequestToItemAddress: &twiliocomms.MessagesSendRequestToItemAddress{
-                    Address: "+14153902337",
+                    Address: "+12065558844",
                     Channel: twiliocomms.MessageAddressChannelPhone,
                 },
             },
@@ -29,6 +29,12 @@ func do() {
                 Text: twiliocomms.String(
                     "Hello, World!",
                 ),
+            },
+        },
+        From: &twiliocomms.MessagesSendRequestFrom{
+            MessageAddressSender: &twiliocomms.MessageAddressSender{
+                Address: "+14153901002",
+                Channel: twiliocomms.MessageSenderChannelSms,
             },
         },
     }

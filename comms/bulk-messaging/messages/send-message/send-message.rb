@@ -7,10 +7,14 @@ client = TwilioComms::Client.new(
 
 client.messages.send_(
   to: [{
-    address: "+14153902337",
+    address: "+12065558844",
     channel: "PHONE"
   }],
   content: {
     text: "Hello, World!"
+  },
+  from: {
+    address: "+14153901002",
+    channel: "SMS"
   }
 )

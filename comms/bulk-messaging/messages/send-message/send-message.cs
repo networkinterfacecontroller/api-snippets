@@ -15,13 +15,17 @@ public partial class Examples
             new MessagesSendRequest {
                 To = new List<OneOf<MessagesSendRequestToItemAddress, MessagesSendRequestToItemAddresses, MessagesSendRequestToItemMemoryStoreId>>(){
                     new MessagesSendRequestToItemAddress {
-                        Address = "+14153902337",
+                        Address = "+12065558844",
                         Channel = MessageAddressChannel.Phone
                     },
                 }
                 ,
                 Content = new MessageContentTextWithMedia {
                     Text = "Hello, World!"
+                },
+                From = new MessageAddressSender {
+                    Address = "+14153901002",
+                    Channel = MessageSenderChannel.Sms
                 }
             }
         );
