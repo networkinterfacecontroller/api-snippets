@@ -1,2 +1,2 @@
-curl -X GET "https://comms.twilio.com/v1/PushNotifications/Apps?startDate=2024-01-15T09:30:00Z&endDate=2024-01-15T09:30:00Z&isDefault=true&pageToken=pageToken&pageSize=50" \
+curl -X GET "https://comms.twilio.com/v1/PushNotifications/Apps?startDate=2024-01-15&endDate=2024-01-15&isDefault=true&pageToken=pageToken&pageSize=50" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

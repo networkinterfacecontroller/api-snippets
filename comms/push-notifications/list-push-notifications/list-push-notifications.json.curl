@@ -1,2 +1,2 @@
-curl -X GET "https://comms.twilio.com/v1/PushNotifications?operationId=comms_operation_01h9krwprkeee8fzqspvwy6nq8&status=SCHEDULED&tags=key_1:value;key_2:value;&startDate=2024-01-15T09:30:00Z&endDate=2024-01-15T09:30:00Z&user=comms_pushnotificationuser_01h9krwprkeee8fzqspvwy6nq8&provider=APN&pageToken=pageToken&pageSize=50" \
+curl -X GET "https://comms.twilio.com/v1/PushNotifications?operationId=comms_operation_01h9krwprkeee8fzqspvwy6nq8&status=SCHEDULED&tags=key_1:value;key_2:value;&startDate=2024-01-15&endDate=2024-01-15&user=comms_pushnotificationuser_01h9krwprkeee8fzqspvwy6nq8&provider=APN&pageToken=pageToken&pageSize=50" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
