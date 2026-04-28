@@ -1,6 +1,4 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/Senders/Search' \
+curl -X POST 'https://comms.twilio.com/v1/Senders/Search' \
 --header 'Content-Type: application/json' \
 --data '{
     "address": "+14153902337",

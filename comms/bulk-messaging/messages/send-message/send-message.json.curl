@@ -1,6 +1,4 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/Messages' \
+curl -X POST 'https://comms.twilio.com/v1/Messages' \
 --header 'Content-Type: application/json' \
 --data '{
     "to": [

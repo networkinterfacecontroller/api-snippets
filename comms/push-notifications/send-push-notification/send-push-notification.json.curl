@@ -1,6 +1,4 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/PushNotifications' \
+curl -X POST 'https://comms.twilio.com/v1/PushNotifications' \
 --header 'Content-Type: application/json' \
 --data '{
     "from": {

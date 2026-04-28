@@ -1,6 +1,4 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/SenderPools' \
+curl -X POST 'https://comms.twilio.com/v1/SenderPools' \
 --header 'Content-Type: application/json' \
 --data '{
     "name": "Sales Leads - APAC",

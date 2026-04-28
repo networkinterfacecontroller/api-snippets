@@ -1,6 +1,4 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/Senders/Resolve' \
+curl -X POST 'https://comms.twilio.com/v1/Senders/Resolve' \
 --header 'Content-Type: application/json' \
 --data '{
     "recipientAddresses": [

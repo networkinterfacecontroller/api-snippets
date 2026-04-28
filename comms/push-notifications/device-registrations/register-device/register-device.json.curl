@@ -1,6 +1,4 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/PushNotifications/DeviceRegistrations' \
+curl -X POST 'https://comms.twilio.com/v1/PushNotifications/DeviceRegistrations' \
 --header 'Content-Type: application/json' \
 --data '{
     "userId": "your_pushnotificationuser_id",
